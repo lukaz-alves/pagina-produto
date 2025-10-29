@@ -1,0 +1,68 @@
+@media screen and (min-width: 720px) {
+    main#cartao {
+        display: flex;
+        justify-content: space-between;
+        height: 580px;
+        width: 700px;
+        position: relative;
+    }
+    
+    main#cartao>picture>img {
+        height: 580px;
+        width: 350px;
+    }
+
+    main#cartao>section>p.perfume {
+        font-size: 17px;
+        margin-bottom: 25px;
+    }
+
+    main#cartao>section>h1 {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 32px;
+    }
+
+    main#cartao>section>p.descricao {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    main#cartao>section.texto {
+        margin: 20px 0px 10px 0px;
+    }
+
+    main#cartao>section.preco {
+        position: absolute;
+        right: 6px;
+        bottom: 30px;
+    }
+
+    main#cartao>section.preco>span.desconto {
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+
+    main#cartao>section.preco>span.antigo-valor>s {
+        font-size: 18px;
+    }
+
+    main#cartao>section.preco>button {
+        height: 60px;
+        margin-bottom: 16px;
+    }
+
+    main#cartao>section.preco>button>span {
+        margin-right: -40px;
+    }
+
+    main#cartao>section.preco>button>img {
+        margin-top: 6px;
+        margin-left: -10px;
+    }
+    
+    main>section.preco>button>span.nome-botao {
+        margin-left: 6px;
+        font-size: 18px;
+    }
+}

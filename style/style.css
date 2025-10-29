@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-de-fundo: hsl(30, 38%, 92%);
+    --cor-do-card: hsl(0, 0%, 100%);
+    --cor-do-texto: hsl(228, 12%, 48%);
+    --cor-do-titulo: hsl(212, 21%, 14%);
+    --cor-do-botao: hsl(158, 36%, 37%);
+    --cor-botao-ativo: hsl(158, 42%, 18%);
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main>section {
+    padding: 0px 35px;
+}
+
+main#cartao {
+    background-color: var(--cor-do-card);
+    height: 730px;
+    width: 370px;
+    border-radius: 10px;
+}
+
+main#cartao>picture>img {
+    width: 370px;
+    height: 350px;
+    border-radius: 10px 10px 1px 1px;
+}
+
+p {
+    color: var(--cor-do-texto);
+}
+
+main>section.texto>p.perfume {
+    margin: 20px 0px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+main>section.texto>h1 {
+    font-family: 'Fraunces', serif;
+    line-height: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+main>section.texto>p.descricao {
+    line-height: 22px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+main>section.preco {
+    position: relative;
+}
+
+main>section.preco>span {
+    display: inline-block;
+}
+
+main>section.preco>span.desconto {
+    font-family: 'Fraunces', serif;
+    color: var(--cor-do-botao);
+    margin-right: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+main>section.preco>span.antigo-valor {
+    position: absolute;
+    color: var(--cor-do-texto);
+    margin-top: 11px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+main>section.preco>button {
+    background-color: var(--cor-do-botao);
+    color: var(--cor-do-card);
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    border: none;
+    margin-top: 15px;
+    font-weight: bolder;
+    font-size: 15px;
+    position: relative;
+}
+
+main>section.preco>button>span.nome-botao {
+    margin-left: 20px;
+}
+
+main>section.preco>button>img {
+    position: absolute;
+    width: 20px;
+    left: 92px;
+    top: 12px;
+}
+
+main>section.preco>button:hover {
+    background-color: var(--cor-botao-ativo);
+    cursor: pointer;
+}
